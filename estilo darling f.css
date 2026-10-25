@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #e65100;
+    font-size: 40px;
+    margin: 15px;
+}
+
+h2 {
+    color: #ef6c00;
+    margin: 20px 0;
+}
+
+h3 {
+    color: #e65100;
+    margin: 12px 0;
+}
+
+p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.descripcion {
+    color: #5d4037;
+    font-size: 20px;
+}
+
+.subtitulo {
+    color: #5d4037;
+}
+
+/* MENU PRINCIPAL */
+
+.menu {
+    margin: 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #f57c00;
+    color: white;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px #aaaaaa;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #e65100;
+    transform: scale(1.05);
+}
+
+.menu .login {
+    background-color: #bf360c;
+}
+
+.menu .login:hover {
+    background-color: #7f0000;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-color: #f57c00;
+    margin: 25px 0;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 2px solid #ffb74d;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px #d7ccc8;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* CATALOGO */
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+}
+
+.producto {
+    background-color: white;
+    border: 2px solid #ffb74d;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px #d7ccc8;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.02);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 220px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ff9800;
+}
+
+.producto p {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* BOTONES */
+
+button {
+    border: none;
+    background-color: #f57c00;
+    color: white;
+    padding: 11px 16px;
+    margin: 4px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e65100;
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* CARRITO */
+
+.carrito {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 22px;
+    background-color: white;
+    border: 2px solid #ffb74d;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #d7ccc8;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ffcc80;
+    padding: 12px;
+}
+
+th {
+    background-color: #ffe0b2;
+    color: #5d4037;
+}
+
+td {
+    background-color: #fffdf7;
+}
+
+.total {
+    color: #bf360c;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.acciones {
+    margin: 20px 0;
+}
+
+.secundario {
+    background-color: #757575;
+}
+
+.secundario:hover {
+    background-color: #424242;
+}
+
+.completar {
+    background-color: #2e7d32;
+}
+
+.completar:hover {
+    background-color: #1b5e20;
+}
+
+.btn-eliminar {
+    background-color: #c62828;
+    padding: 8px 12px;
+}
+
+.btn-eliminar:hover {
+    background-color: #8e0000;
+}
+
+#mensaje-pago {
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    color: #795548;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 900px) {
+    .catalogo,
+    .servicios {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .catalogo,
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .menu a {
+        display: block;
+    }
+
+    .carrito {
+        padding: 10px;
+    }
+}
