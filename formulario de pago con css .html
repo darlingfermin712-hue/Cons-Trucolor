@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Formulario de Pago - Cons Trucolor</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2, #ffcc80);
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .registro {
+            background-color: white;
+            width: 430px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px #bdbdbd;
+        }
+
+        .registro h1 {
+            color: #e65100;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .registro h2 {
+            color: #ef6c00;
+            margin-bottom: 25px;
+        }
+
+        .inputBox p {
+            margin-bottom: 18px;
+        }
+
+        .inputBox label {
+            font-weight: bold;
+            color: #5d4037;
+        }
+
+        .inputBox input {
+            width: 90%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 2px solid #ffb74d;
+            border-radius: 10px;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .inputBox input:focus {
+            border-color: #ef6c00;
+        }
+
+        .inputBox select {
+            width: 90%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 2px solid #ffb74d;
+            border-radius: 10px;
+            background-color: white;
+            font-size: 15px;
+        }
+
+        .inputBox select:focus {
+            border-color: #ef6c00;
+        }
+
+        .mi-boton1 {
+            background-color: #e65100;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0px 4px 8px #bdbdbd;
+        }
+
+        .mi-boton1:hover {
+            background-color: #bf360c;
+            transform: scale(1.05);
+        }
+
+        .mi-boton2 {
+            background-color: #f57c00;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0px 4px 8px #bdbdbd;
+        }
+
+        .mi-boton2:hover {
+            background-color: #e65100;
+            transform: scale(1.05);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<center>
+
+<div class="registro">
+
+    <h1>CONS TRUCOLOR</h1>
+
+    <h2>Formulario de Pago</h2>
+
+    <div class="inputBox">
+
+        <p>
+            <label>Nombre</label><br>
+            <input type="text" placeholder="Nombre">
+        </p>
+
+        <p>
+            <label>Apellido</label><br>
+            <input type="text" placeholder="Apellido">
+        </p>
+
+        <p>
+            <label>Correo</label><br>
+            <input type="email" placeholder="Alguien@email.com">
+        </p>
+
+        <p>
+            <label>Número</label><br>
+            <input type="text" placeholder="809 XXX XXXX">
+        </p>
+
+        <p>
+            <label>Contraseña</label><br>
+            <input type="password" placeholder="Password">
+        </p>
+
+        <p>
+            <label>Recordar contraseña</label><br>
+            <input type="password" placeholder="Password">
+        </p>
+
+        <p>
+            <label for="Sexo">Elija el sexo</label><br>
+
+            <select name="Sexo" id="Sexo">
+
+                <option value="">Elija el sexo</option>
+
+                <option value="Femenino">
+                    Femenino
+                </option>
+
+                <option value="Masculino">
+                    Masculino
+                </option>
+
+                <option value="No decirlo">
+                    Prefiero no decirlo
+                </option>
+
+            </select>
+
+        </p>
+
+        <p>
+
+            <label for="Edad">Elija la edad</label><br>
+
+            <select name="Edad" id="Edad">
+
+                <option value="">
+                    Elija la edad
+                </option>
+
+                <option value="22">18</option>
+                <option value="23">19</option>
+                <option value="24">20</option>
+                <option value="25">21</option>
+                <option value="26">22</option>
+                <option value="27">23</option>
+
+            </select>
+
+        </p>
+
+        <p>
+            <label>Número de tarjeta</label><br>
+            <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+        </p>
+
+        <p>
+            <label>Fecha de vencimiento</label><br>
+            <input type="text" placeholder="MM/AA">
+        </p>
+
+        <p>
+            <label>CVV</label><br>
+            <input type="password" placeholder="CVV">
+        </p>
+
+        <br>
+
+        <a href="Menu.html">
+
+            <button type="button" class="mi-boton1">
+                Pagar
+            </button>
+
+        </a>
+
+        <a href="Login.html">
+
+            <button type="button" class="mi-boton2">
+                Usuario
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+</center>
+
+</body>
+
+</html>
